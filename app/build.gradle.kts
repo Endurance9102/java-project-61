@@ -1,7 +1,17 @@
 plugins {
     id("java")
     id("application")
+    id("org.sonarqube") version "7.3.1.8318"
 }
+
+sonar {
+    properties {
+        property("sonar.projectKey", "Endurance9102_java-project-61")
+        property("sonar.organization", "endurance9102")
+    }
+}
+
+
 application {
     mainClass = "hexlet.code.App"
 }
