@@ -2,6 +2,7 @@ plugins {
     id("java")
     id("application")
     id("org.sonarqube") version "7.3.1.8318"
+    id("checkstyle")
 }
 
 sonar {
