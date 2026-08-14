@@ -18,19 +18,26 @@ class ChooseGame {
     public static void choose() {
         System.out.println("Please enter the game number and press Enter.");
         System.out.println("1 - Greet");
-        System.out.println(("2 - Even"));
+        System.out.println("2 - Even");
+        System.out.println("3 - Calc");
         System.out.println("0 - Exit");
         int resultUserChoice = getChoose();
         System.out.println("Your choice: " + resultUserChoice);
         String userName;
-        if (resultUserChoice == 1 || resultUserChoice == 2) {
+        if (resultUserChoice == 1 || resultUserChoice == 2 || resultUserChoice == 3) {
             System.out.println("Welcome to the Brain Games!");
             System.out.println("May I have your name?");
             userName = Cli.example();
             System.out.println("Hello, " + userName + "!");
             if (resultUserChoice == 2) {
                 System.out.println("Answer 'yes' if the number is even, otherwise answer 'no'.");
-                Even.play(userName);
+                Game even = new Even();
+                Engine.play(even, userName);
+            }
+            if (resultUserChoice == 3) {
+                System.out.println("What is the result of the expression?");
+                Game calc = new Calc();
+                Engine.play(calc, userName);
             }
         } else if (resultUserChoice == 0) {
             System.exit(0);
