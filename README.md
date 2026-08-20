@@ -13,3 +13,4 @@
 https://asciinema.org/a/OPNVsIngaAL4exgD (Demo Braing Games Even)
 https://asciinema.org/a/D7eeYRRWWR1oxywm (Demo Braing Games Calc)
 https://asciinema.org/a/bF6mfFpOu1ZmIYYQ (Demo Braing Games Nod)
+https://asciinema.org/a/hPbgbXTZgJKvDKnQ (Demo Braing Games Progression)
