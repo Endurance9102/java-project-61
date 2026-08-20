@@ -21,11 +21,13 @@ class ChooseGame {
         System.out.println("2 - Even");
         System.out.println("3 - Calc");
         System.out.println("4 - Nod");
+        System.out.println("5 - Progression");
         System.out.println("0 - Exit");
         int resultUserChoice = getChoose();
         System.out.println("Your choice: " + resultUserChoice);
         String userName;
-        if (resultUserChoice == 1 || resultUserChoice == 2 || resultUserChoice == 3 || resultUserChoice == 4) {
+        if (resultUserChoice == 1 || resultUserChoice == 2 || resultUserChoice == 3
+                || resultUserChoice == 4 || resultUserChoice == 5) {
             System.out.println("Welcome to the Brain Games!");
             System.out.println("May I have your name?");
             userName = Cli.example();
@@ -44,6 +46,11 @@ class ChooseGame {
                 System.out.println("Find the greatest common divisor of given numbers.");
                 Game nod = new Nod();
                 Engine.play(nod, userName);
+            }
+            if (resultUserChoice == 5) {
+                System.out.println("What number is missing in the progression?");
+                Game progression = new Progression();
+                Engine.play(progression, userName);
             }
         } else if (resultUserChoice == 0) {
             System.exit(0);
