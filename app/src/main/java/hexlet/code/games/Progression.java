@@ -1,7 +1,8 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Game;
 import java.util.Random;
 
-class Progression implements Game {
+public class Progression implements Game {
     private int start;
     private int step;
     private int current;

@@ -1,11 +1,12 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Game;
 import java.util.Random;
 
 
 
 
 
-class Even implements Game {
+public class Even implements Game {
     private int randomNumber;
 
     public static int getRandomNumber() {

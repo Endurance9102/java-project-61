@@ -1,5 +1,10 @@
 package hexlet.code;
 import java.util.Scanner;
+import hexlet.code.games.Even;
+import hexlet.code.games.Calc;
+import hexlet.code.games.Nod;
+import hexlet.code.games.Progression;
+import hexlet.code.games.Prime;
 
 public class Cli {
     public static String example() {

@@ -1,7 +1,8 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Game;
 import java.util.Random;
 
-class Prime implements Game {
+public class Prime implements Game {
     private int randomNumber;
     public String getQuestion() {
         Random random = new Random();

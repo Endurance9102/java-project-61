@@ -1,7 +1,8 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Game;
 import java.util.Random;
 
-class Nod implements Game {
+public class Nod implements Game {
     private int randomNumber1;
     private int randomNumber2;
 

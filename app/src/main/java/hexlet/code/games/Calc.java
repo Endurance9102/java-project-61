@@ -1,7 +1,8 @@
-package hexlet.code;
+package hexlet.code.games;
+import hexlet.code.Game;
 import java.util.Random;
 
-class Calc implements  Game {
+public class Calc implements  Game {
     private int randomNumber1;
     private int randomNumber2;
     private String operation;
